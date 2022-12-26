@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+    gap: 40px;
+
+    
+}
+
+.img-one{
+    width: 55%;
+    height: auto;
+    display: block;
+    margin-left: 71px;
+
+
+}
+
+.card-efects{
+    position: absolute;
+    left: 69px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0,.5);
+    opacity: 0;
+    transition: all 0.4s ease-out 0s;
+    width: 30%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+.container:hover .card-efects{
+    opacity: 1;
+}
+
+.icon-main i{
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 16px;
+    padding: 14px;
+    border-radius: 100%;
+    color: #fff;
+    transition: all 0.4s ease-out 0s;
+    cursor: pointer;
+}
+
+.icon-main i:hover{
+    background-color: blue;
+}
+
+
+.icon-main{
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.card-main{
+    width: 50%;
+    position: relative;
+}
+
+
+.img-two{
+
+    width: 109%;
+    height: auto;
+    display: block;
+
+}
+
+.card-new{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    width: 109%;
+    height: 0;
+    background-color: rgba(0, 0, 0, .5);
+    transition: all 0.4s ease-out 0s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-main:hover .card-new{
+    height: 100%;
+    bottom: 0;
+}
+
+
+
+.card-scall{
+    width: 50%;
+    position: relative;
+}
+
+
+.img-three{
+    width: 109%;
+    height: auto;
+    display: block;
+    margin-left: 20px;
+}
+
+.card-one{
+    position: absolute;
+    bottom: 0;
+    left: 18px;
+    right: 0;
+    width: 110%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    transition: all 0.4s ease-out 0s;
+    overflow: hidden;
+    cursor: pointer;
+    transform: scale(0);
+}
+
+.card-scall:hover .card-one{
+    transform: scale(1);
+}
+
